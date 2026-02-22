@@ -1,4 +1,4 @@
-# Exercise 1 - NOT COMPLETE
+# Exercise 1
 
 from heapq import merge
 import sys
@@ -16,13 +16,12 @@ def merge(arr, low, mid, high):
     k = low    # pointer for replacing original array
 
     while i < len(left) and j < len(right):
-        # if left half has next smallest element
         if left[i] <= right[j]:
             arr[k] = left[i]    # put next in original array
             i += 1
-        else:    # if right side has next smallest element
+        else:
             arr[k] = right[j]
-            j += 1    # move to next element if already added
+            j += 1
         k += 1
 
     while i < len(left):    # if only left half is left

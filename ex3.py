@@ -5,16 +5,16 @@ import matplotlib.pyplot as plt
 
 def bubble_sort_count(arr):
     n = len(arr)
-    comparisons = 0
+    comps = 0
     swaps = 0
     
     for i in range(n):
         for j in range(n-i-1):
-            comparisons += 1
+            comps += 1
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 swaps += 1
-    return comparisons, swaps
+    return comps, swaps
 
 # test sizes
 sizes = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]

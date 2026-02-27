@@ -12,7 +12,7 @@ def merge(arr, low, mid, high):
     left = arr[low:mid + 1]
     right = arr[mid + 1:high + 1]
 
-    i = j = 0    # pointers for sides
+    i = j = 0   # pointers for sides
     k = low    # pointer for replacing original array
 
     while i < len(left) and j < len(right):
